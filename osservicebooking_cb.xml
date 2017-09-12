@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cbinstall version="1.9" type="plugin" group="user">
+	<name>OsServiceBooking</name>
+	<author>Hector Garzo</author>
+	<creationDate>July 2017</creationDate>
+	<copyright>Copyright (C) 2013-2016 mygroup.com</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>hagarzo@gmail.com</authorEmail>
+	<authorUrl></authorUrl>
+	<version>2.1.2+build.2017.05.04.16.30.55.c67734e1f</version>
+	<release>2.1.2+build.2017.05.04.16.30.55.c67734e1f</release>
+	<description>This plugin will show calendar of bookings where the user is reserved.</description>
+	<files>
+		<filename plugin="osservicebooking_cb">osservicebooking_cb.php</filename>
+		<filename>index.html</filename>
+		<filename>osservicebooking_cb.css</filename>
+		<filename>language/english.php</filename>
+		<filename>language/spanish.php</filename>
+		<filename>language/index.html</filename>
+		<filename>install.php</filename>
+	</files>
+	<installfile>install.php</installfile>
+	<params>
+	</params>
+	<tabs>
+		<tab name="OSM_MY_SUBSCRIPTIONS" description="" class="osservicebookingTab" fields="0" position="canvas_main_middle" displaytype="menu">
+		<params>
+			<param name="demo" type="radio" default="0" label="Demo Param" description="Show/Hide comments">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+			<param name="xWin" type="text" description="with modal windows details" default="800" />
+			<param name="yWin" type="text" description="height modal windows details" default="600" />
+		</params>
+			<fields>
+			</fields>
+		</tab>
+	</tabs>
+	<install>
+		<queries>
+		</queries>
+	</install>
+	<uninstall>
+	</uninstall>
+</cbinstall>
